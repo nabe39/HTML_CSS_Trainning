@@ -1,0 +1,125 @@
+/*
+Author: Duc
+Date: 14/1/2025
+File name: styles.css
+*/
+
+/* CSS reset */
+body,
+header,
+nav,
+footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: #000;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rule for header */
+header {
+  float: left;
+  width: 25%;
+}
+
+/* Style for rules for navigation area */
+nav {
+  float: right;
+  margin: 5rem 3rem 0 0;
+  width: 70%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: right;
+}
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+}
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+  clear: left;
+  background-color: #fff;
+  font-size: 1.25em;
+  padding: 2%;
+  /* overflow: auto; */
+}
+
+.action {
+  font-size: 1.35em;
+  color: #666600;
+  font-weight: bold;
+}
+
+#weights,
+#cardio,
+#training {
+  width: 29%;
+  float: left;
+  margin: 0 2%;
+}
+
+#exercises {
+  clear: left;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: #f2f2f2;
+  padding: 1% 2%;
+}
+
+#exercises dt {
+  font-weight: bold;
+}
+
+#exercises dd {
+  padding: 0.5% 1% 2% 0;
+}
+
+.external-link {
+  color: #666600;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact {
+  text-align: center;
+}
+#contact a {
+  color: #666600;
+  text-decoration: none;
+}
+
+.map {
+  border: 8px solid #000;
+}
+
+/* Style rules for footer content */
+footer p {
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+  padding: 0 1em;
+}
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
