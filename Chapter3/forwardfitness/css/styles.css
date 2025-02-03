@@ -15,7 +15,9 @@ figure,
 figcaption,
 section,
 article,
-aside {
+aside,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -26,9 +28,13 @@ body {
   background-color: #000;
 }
 
-img {
+img, video {
   max-width: 100%;
   display: block;
+}
+
+video{
+  margin: 0 auto 4%;
 }
 
 /* Style rule for box sizing applies to all elements */
@@ -451,19 +457,18 @@ footer p a {
     clear: left;
   }
 
-
   /* Desktop Viewport: Style rules for form elements */
-  form{
+  form {
     width: auto;
   }
 
-  .form-grid{
+  .form-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
   }
 
-  .btn{
+  .btn {
     grid-column: 1 / span 3;
   }
 }
