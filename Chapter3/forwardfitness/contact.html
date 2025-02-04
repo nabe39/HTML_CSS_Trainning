@@ -32,7 +32,7 @@
   <body>
     <div id="container">
       <!-- Use the header area for the website name or logo -->
-      <header>
+      <header id="ffc-logo">
         <a href="index.html">
           <img
             src="/images/forward-fitness-logo.png"
@@ -41,8 +41,24 @@
         </a>
       </header>
 
-      <!-- Use the nav area to add hyperlinks to other pages within the website -->
-      <nav>
+      <!-- Table, Desktop Nav -->
+
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav">
+        <div id="menu-links">
+          <a href="index.html"> Home </a>
+          <a href="about.html"> About Us </a>
+          <a href="classes.html">Classes</a>
+          <a href="nutrition.html">Nutrition</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <a class="menu-icon">
+          <div>&#9776;</div>
+        </a>
+      </nav>
+
+      <nav class="tablet-desktop">
         <ul>
           <li><a href="index.html"> Home </a></li>
           <li><a href="about.html"> About Us </a></li>
@@ -66,6 +82,11 @@
               >forwardfitness@club.net</a
             >
           </h4>
+
+          <h3 class="offer" onclick="discount()" id="special">
+            View Promo Code
+          </h3>
+
           <h4>Visit us at: 1275 Channel Center Street, Boston, MA 02210</h4>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.6160250687076!2d-87.62493068783309!3d41.879607065199025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca3e2d94695%3A0x4829f3cc9ca2d0de!2zVmnhu4duIE5naOG7hyB0aHXhuq10IENoaWNhZ28!5e0!3m2!1svi!2s!4v1736753728366!5m2!1svi!2s"
@@ -78,7 +99,7 @@
           ></iframe>
         </div>
 
-        <div id="form" >
+        <div id="form">
           <h2>Complete the form below to begin your free trial.</h2>
 
           <form class="form-grid">
@@ -145,15 +166,19 @@
               </select>
 
               <label for="questions">Questions</label>
+
               <textarea
                 name="questions"
                 id="questions"
                 rows="5"
                 cols="35"
               ></textarea>
+
+              <label for="promo">Promo Code:</label>
+              <input type="text" id="promo" name="promo">
             </fieldset>
 
-            <input type="submit" value="Submit" id="submit" class="btn">
+            <input type="submit" value="Submit" id="submit" class="btn" />
           </form>
         </div>
       </main>
@@ -166,5 +191,7 @@
         </p>
       </footer>
     </div>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

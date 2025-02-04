@@ -36,7 +36,7 @@
   <body>
     <div id="container">
       <!-- Use the header area for the website name or logo -->
-      <header>
+      <header id="ffc-logo">
         <a href="index.html">
           <img
             src="/images/forward-fitness-logo.png"
@@ -45,8 +45,26 @@
         </a>
       </header>
 
-      <!-- Use the nav area to add hyperlinks to other pages within the website -->
-      <nav>
+      <!-- Table, Desktop Nav -->
+
+       <!-- Mobile Nav -->
+       <nav class="mobile-nav">
+        <div id="menu-links">
+          <a href="index.html"> Home </a>
+          <a href="about.html"> About Us </a>
+          <a href="classes.html">Classes</a>
+          <a href="nutrition.html">Nutrition</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+
+        <a class="menu-icon">
+          <div>&#9776;</div>
+        </a>
+      </nav>
+
+
+      <nav class="tablet-desktop">
         <ul>
           <li><a href="index.html"> Home </a></li>
           <li><a href="about.html"> About Us </a></li>
@@ -196,5 +214,8 @@
         </p>
       </footer>
     </div>
+    
+    <script src="./scripts/script.js"></script>
+
   </body>
 </html>

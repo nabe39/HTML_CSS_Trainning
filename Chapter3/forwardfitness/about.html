@@ -32,7 +32,7 @@
   <body>
     <div id="container">
       <!-- Use the header area for the website name or logo -->
-      <header>
+      <header id="ffc-logo">
         <a href="index.html">
           <img
             src="/images/forward-fitness-logo.png"
@@ -41,8 +41,24 @@
         </a>
       </header>
 
-      <!-- Use the nav area to add hyperlinks to other pages within the website -->
-      <nav>
+      <!-- Table, Desktop Nav -->
+
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav">
+        <div id="menu-links">
+          <a href="index.html"> Home </a>
+          <a href="about.html"> About Us </a>
+          <a href="classes.html">Classes</a>
+          <a href="nutrition.html">Nutrition</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <a class="menu-icon">
+          <div>&#9776;</div>
+        </a>
+      </nav>
+
+      <nav class="tablet-desktop">
         <ul>
           <li><a href="index.html"> Home </a></li>
           <li><a href="about.html"> About Us </a></li>
@@ -54,11 +70,8 @@
 
       <!-- Use the main area to add the main content of the webpage -->
       <main>
-        <video controls poster="/images/hero-image.jpg" >
-          <source
-            src="media/rickroll.mp4"
-            type="video/mp4"
-          />
+        <video controls poster="/images/hero-image.jpg">
+          <source src="media/rickroll.mp4" type="video/mp4" />
         </video>
 
         <section id="weights">
@@ -135,14 +148,16 @@
               Burpees are a great full-body exercise to increase your strength
               and endurance. Begin in a standing position, drop into a squat and
               extend your hands forward, kick your feet back and then forward
-              again quickly, and then jump up from a squatted position.
+              again quickly, and then jump up from a squatted position. <br>
+              <span class="viewex" onclick="burpees()"> View Example.</span>
             </dd>
 
             <dt>Plank</dt>
             <dd>
               Planks build your core strength. To perform a plank, get in a
               push-up position and rest your forearms on the floor. Hold the
-              position as long as you can.
+              position as long as you can. <br>
+              <span class="viewex" onclick="plank()">View Example.</span>
             </dd>
 
             <dt>Mountain Climber</dt>
@@ -150,9 +165,17 @@
               Mountain climbers are a good cardio exercise. Place your hands on
               the floor in a push-up position, bring one knee up to your chest,
               and then switch as quickly as you can (as though you are climbing
-              a mountain).
+              a mountain). <br>
+              <span class="viewex" onclick="moutain()">View Example.</span>
             </dd>
           </dl>
+
+          <video controls id="example">
+            <source src="vid" id="vid-src" type="video/mp4" />
+            <!-- <track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions"> -->
+            <p>Your browser does not support the video element.</p>
+          </video>
+
           <p>
             For more information about how to stay active, visit the
             <a
@@ -173,5 +196,7 @@
         </p>
       </footer>
     </div>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
